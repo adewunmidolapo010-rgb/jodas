@@ -111,6 +111,11 @@ body {
     transform: translateY(-3px);
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 /* ===========================
    SECTIONS
 =========================== */
@@ -194,57 +199,9 @@ section p {
    CONTACT FORM
 =========================== */
 
-.contact form{
-    max-width:600px;
-    margin:40px auto;
-
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-}
-
-.contact input,
-.contact textarea{
-
-    padding:15px;
-
-    font-size:16px;
-
-    border:1px solid #ccc;
-
-    border-radius:8px;
-
-    outline:none;
-}
-
-.contact input:focus,
-.contact textarea:focus{
-
-    border-color:#0d6efd;
-}
-
-.contact button{
-
-    padding:15px;
-
-    background:#0d6efd;
-
-    color:white;
-
-    border:none;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-    font-size:18px;
-
-    transition:.3s;
-}
-
-.contact button:hover{
-
-    background:#084298;
+.contact-info {
+    text-align: center;
+    gap: 20px;
 }
 /* ===========================
    FOOTER

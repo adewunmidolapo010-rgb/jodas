@@ -1,68 +1,21 @@
-import { useState } from "react";
-
+import whatsapp from "../assets/whatsapp.png";
+import tiktok from "../assets/tiktok.png";
+import facebook from "../assets/facebook.png";
+import gmail from "../assets/gmail.png";
 function Contact() {
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  function handleSubmit(event) {
-    event.preventDefault();
-
-    if (!name || !email || !message) {
-      alert("Please fill in all fields.");
-      return;
-    }
-
-    alert("Message sent successfully!");
-
-    console.log({
-      name,
-      email,
-      message,
-    });
-
-    setName("");
-    setEmail("");
-    setMessage("");
-  }
-
-  return (
-    <section id="contact" className="contact">
-
-      <h2>Contact Us</h2>
-
-      <form onSubmit={handleSubmit}>
-
-        <input
-          type="text"
-          placeholder="Your Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-
-        <input
-          type="email"
-          placeholder="Your Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-
-        <textarea
-          placeholder="Your Message"
-          rows="6"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        ></textarea>
-
-        <button type="submit">
-          Send Message
-        </button>
-
-      </form>
-
-    </section>
-  );
+  return(
+    <div className="contact-info">
+      <h1>Contact Us</h1>
+      <p>For More Enquires <i>reach out on:</i></p>
+      <div>
+        <a href="https://wa.me/2348101217454"><img src={whatsapp} alt="whatsapp" width={50} /></a>
+        <br />        
+        <a href="https://www.tiktok.com/@jodas_technologies"><img src={tiktok} alt="tiktok" width={40} /></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adewunmioluwadamilare09@gmail.com&su=Hello&body=Can%20I%20know%more%20about%20you!"><img src={gmail} alt="gmail" width={40} /></a>
+        <a href="https://www.facebook.com/adewunmi.oluwadamilare.2025"><img src={facebook} alt="facebook" width={40} /></a>
+      </div>
+    </div>
+  )
 }
-
 export default Contact;
