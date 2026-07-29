@@ -13,7 +13,7 @@ function Contact() {
         <a href="https://wa.me/2348101217454?text=Hi,%20can%20I%20know%20more%20about%20your%20services?"><img src={whatsapp} alt="whatsapp" width={50} /></a>
         <br />        
         <a href="https://www.tiktok.com/@jodas_technologies"><img src={tiktok} alt="tiktok" width={40} /></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adewunmioluwadamilare09@gmail.com&su=Hello&body=Can%20I%20know%more%20about%20you!"><img src={gmail} alt="gmail" width={40} /></a>
+        <a href="mailto:adewunmioluwadamilare09@gmail.com?subject=Hi,&body=Can%20I%20know%more%20about%20you!"><img src={gmail} alt="gmail" width={40} /></a>
         <a href="https://www.facebook.com/adewunmi.oluwadamilare.2025?text=Hi,%20can%20I%20know%20more%20about%20your%20services?"><img src={facebook} alt="facebook" width={40} /></a>
       </div>
     </div>
